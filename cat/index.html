@@ -112,6 +112,30 @@ Step - 12
                 <figcaption>Cats <strong>hate</strong> other cats.</figcaption >
               </figure>
         </section>
+      <section>
+        <h2>Cat Form</h2> 
+        <!-- Form öğesi, kullanıcıdan adı, e-postası ve diğer ayrıntıları gibi bilgileri almak için kullanılır.
+        action: form hangi syfaya gnderilecek 
+        -->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!-- input öğesi, bir web formundan veri toplamanın çeşitli yollarını sağlar. img öğeleri gibi, giriş öğeleri de geçersiz bir öğedir ve kapatma etiketlerine ihtiyaç duymazlar. 
+            Type niteliğini kullanarak oluşturabileceğiniz birçok türde giriş vardır. Kullanıcıların bilgisayarlarından bir dosya seçmesine olanak tanıyan bir parola alanı, sıfırlama düğmesi veya bir kontrolü kolayca oluşturabilirsiniz. 
+
+            Bir formun verilerine action özelliğinde belirtilen konumdan erişilebilmesi için metin alanına bir name özelliği vermeniz ve ona, gönderilen verileri temsil edecek bir değer atamanız gerekir.
+
+            Placeholder, insanlara bir girdiye ne tür bilgilerin girilmesi gerektiği konusunda ipucu vermek için kullanılır.
+            
+            Required bilgiler eksik olduğunda kullanıcının formunuzu göndermesini önlemek için required özelliği bir giriş öğesine eklemeniz gerekir. Gerekli özniteliğe bir değer ayarlamanıza gerek yoktur. Bunun yerine, gerekli kelimeyi giriş öğesine ekleyin ve bu kelimeyle diğer özellikler arasında boşluk olduğundan emin olun.
+            
+            -->
+            <input type="text" name="catphotourl" required>
+            <!-- button elemanı tıklanabilir bir button oluşturmak için kullanılır. Giriş öğesinin altına Gönder metnini içeren bir düğme öğesi ekleyin. Herhangi bir öznitelik olmadan bir form düğmesinin tıklatılması şeklindeki varsayılan davranış, formu, formun eylem özniteliğinde belirtilen konuma gönderir.
+
+            Düğmenizi metin girişinin altına eklemiş olsanız bile sayfada yan yana görünürler. Bunun nedeni hem giriş hem de düğme öğelerinin satır içi öğeler olması ve yeni satırlarda görünmemesidir. Eklediğiniz düğme varsayılan olarak formu gönderecektir. Ancak varsayılan davranışa güvenmek karışıklığa neden olabilir. Bunun bir gönder düğmesi olduğunu açıkça belirtmek için düğmeye gönder değeriyle birlikte type özelliğini ekleyin.
+ -->
+            <button type="sumbit">Submit</button>
+        </form>
+      </section>
             
         </main>
 
