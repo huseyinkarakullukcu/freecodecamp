@@ -28,6 +28,41 @@ Step - 4
         - Yorum yapma, tarayıcı ekranını etkilemeden mesaj bırakmanıza olanak tanır. Ayrıca kodu devre dışı bırakmanıza da olanak tanır. HTML'deki bir yorum -->
          <!-- ile başlar, herhangi bir sayıda metin satırı içerir ve  ile biter. -->
 
+         <!--
+Step - 5
+        -   HTML5, farklı içerik alanlarını tanımlayan bazı öğelere sahiptir. Bu öğeler HTML'nizin okunmasını kolaylaştırır ve Arama Motoru Optimizasyonu (SEO) ve erişilebilirlik konusunda yardımcı olur.
+        
+        - The main, bir HTML belgesinin gövdesinin ana içeriğini temsil etmek için kullanılır. Ana öğenin içindeki içerik belgeye özgü olmalı ve belgenin diğer bölümlerinde tekrarlanmamalıdır.
+        
+
+Step - 6
+        - Önceki adımda h1, h2, comment ve p öğelerini ana öğenin içine yerleştirdiniz. Buna Nested denir. Nested öğeler, Nested öğenin iki boşluk sağına yerleştirilmelidir. Bu boşluğa girinti denir ve HTML'nin okunmasını kolaylaştırmak için kullanılır.
+
+
+Step - 7
+        - img elementini kullanarak web sitenize görsel ekleyebilirsiniz. img öğelerinin kapanış etiketi olmayan bir açılış etiketi vardır. Kapanış etiketi olmayan bir öğe, geçersiz öğe olarak bilinir.
+
+Step - 8
+        - HTML nitelikleri, bir öğenin davranışını kontrol etmek için bir öğenin açılış etiketinin içinde kullanılan özel kelimelerdir. Bir img öğesindeki src özelliği, görselin URL'sini (görüntünün bulunduğu yer) belirtir.
+
+Step - 9
+        - All img elements should have an alt attribute. The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load.
+
+
+Step - 10
+        - Bağlantı (a) elemanı ile başka bir sayfaya bağlantı verebilirsiniz.
+
+
+Step - 11
+        - A link's text must be placed between the opening and closing tags of an anchor (a) element.
+
+Step - 12
+        - Herhangi bir metni, örneğin p öğesinin içindeki metin gibi, bir bağlantıya dönüştürebilirsiniz.
+
+
+         -->
+
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -36,10 +71,18 @@ Step - 4
         <title>Document</title>
     </head>
     <body>
-        <h1>CatPhotoApp</h1>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more cat photos in our gallery.</p>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+            <a href="https://freecatphotoapp.com">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back" target="_blank">
+            </a>
+        </section>
+            
+        </main>
 
     </body>
     </html>
