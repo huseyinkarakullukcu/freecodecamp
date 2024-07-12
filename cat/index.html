@@ -118,6 +118,31 @@ Step - 12
         action: form hangi syfaya gnderilecek 
         -->
         <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!-- Birden fazla seçenekten yalnızca birinin yanıtlanmasını istediğiniz sorular için radyo düğmelerini kullanabilirsiniz. Aşağıda cat seçeneği olan bir radyo düğmesi örneği verilmiştir:
+             
+            label öğeleri, bir giriş öğesinin metnini giriş öğesinin kendisi ile ilişkilendirmeye yardımcı olmak için kullanılır (özellikle ekran okuyucular gibi yardımcı teknolojiler için).
+            
+            id niteliği belirli HTML öğelerini tanımlamak için kullanılır. Her kimlik özelliğinin değeri, sayfanın tamamındaki diğer tüm kimlik değerlerinden benzersiz olmalıdır.
+
+            Her iki radyo düğmesinin de aynı anda seçilebileceğine dikkat edin. Bir radyo düğmesinin seçilmesinin diğerinin seçimini otomatik olarak kaldırmasını sağlamak için her iki düğmenin de aynı değere sahip bir name niteliği olması gerekir.
+
+            İç Mekan radyo düğmesini seçip formu gönderirseniz düğmenin form verileri, düğmenin adına ve değer özelliklerine göre belirlenir. Radyo düğmelerinizin bir değer özelliği olmadığından form verileri iç mekan-dış mekan=açık içerecektir; bu, birden fazla düğmeniz olduğunda kullanışlı değildir.
+
+            Her iki radyo düğmesine de bir value özelliği ekleyin. Kolaylık sağlamak için düğmenin value özelliğini, id özelliğiyle aynı değere ayarlayın.
+
+            Fieldset öğesi, ilgili girişleri ve etiketleri bir web formunda birlikte gruplamak için kullanılır. alan kümesi elemanları blok düzeyindeki elemanlardır, yani yeni bir satırda göründükleri anlamına gelir.
+
+            legend öğesi, alan kümesi öğesindeki içerik için bir başlık görevi görür. Kullanıcılara formun o bölümüne ne girmeleri gerektiği konusunda bağlam sağlar.
+            -->
+            <fieldset>
+                <legend>
+                    Is your cat an indoor or outdoor cat?
+                </legend>
+                <label><input type="radio" id="indoor" value="indoor" > Indoor</label> 
+                <label><input id="outdoor" type="radio" value="outdoor"> Outdoor</label>
+            </fieldset>
+            
+
             <!-- input öğesi, bir web formundan veri toplamanın çeşitli yollarını sağlar. img öğeleri gibi, giriş öğeleri de geçersiz bir öğedir ve kapatma etiketlerine ihtiyaç duymazlar. 
             Type niteliğini kullanarak oluşturabileceğiniz birçok türde giriş vardır. Kullanıcıların bilgisayarlarından bir dosya seçmesine olanak tanıyan bir parola alanı, sıfırlama düğmesi veya bir kontrolü kolayca oluşturabilirsiniz. 
 
