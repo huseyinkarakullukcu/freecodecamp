@@ -17,13 +17,17 @@ body{
     Genişlik özelliğinin değerini, üst öğesinin (gövde) genişliğinin %80'i olacak şekilde %80 olacak şekilde değiştirin. 
 
     #menu'yu .menu adlı bir sınıfla değiştirerek mevcut #menu seçiciyi bir sınıf seçiciye dönüştürün.
+
+    Menü sınıfına aynı değerde 20 piksellik bir sol dolgu ve sağ dolgu verin.
     */
     width: 80%;
     background-color:burlywood;
     margin-left: auto;
    margin-right: auto;
+   padding-left:20px;
+   padding-right:20px;
 }
-.flavor{
+.dessert,.flavor{
     text-align:left;
     width:75%;
 }
