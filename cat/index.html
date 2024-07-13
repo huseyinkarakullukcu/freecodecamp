@@ -133,6 +133,8 @@ Step - 12
             Fieldset öğesi, ilgili girişleri ve etiketleri bir web formunda birlikte gruplamak için kullanılır. alan kümesi elemanları blok düzeyindeki elemanlardır, yani yeni bir satırda göründükleri anlamına gelir.
 
             legend öğesi, alan kümesi öğesindeki içerik için bir başlık görevi görür. Kullanıcılara formun o bölümüne ne girmeleri gerektiği konusunda bağlam sağlar.
+
+            Formlar genellikle birden fazla yanıtı olabilecek sorular için onay kutularını kullanır. Type niteliği onay kutusu olarak ayarlanmış giriş öğesi bir onay kutusu oluşturur.
             -->
             <fieldset>
                 <legend>
@@ -141,7 +143,14 @@ Step - 12
                 <label><input type="radio" id="indoor" value="indoor" > Indoor</label> 
                 <label><input id="outdoor" type="radio" value="outdoor"> Outdoor</label>
             </fieldset>
-            
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <!-- 
+                    Bir giriş öğesinin metnini öğenin kendisiyle ilişkilendirmenin başka bir yolu daha vardır. Metni bir etiket öğesinin içine yerleştirebilir ve giriş öğesinin id niteliğiyle aynı değere sahip bir for niteliği ekleyebilirsiniz.
+                -->
+                    <label for="loving"></label>
+                <input type="checkbox" id="loving" value="Loving" name="personality"> <label for="loving">Loving</label>
+            </fieldset>
 
             <!-- input öğesi, bir web formundan veri toplamanın çeşitli yollarını sağlar. img öğeleri gibi, giriş öğeleri de geçersiz bir öğedir ve kapatma etiketlerine ihtiyaç duymazlar. 
             Type niteliğini kullanarak oluşturabileceğiniz birçok türde giriş vardır. Kullanıcıların bilgisayarlarından bir dosya seçmesine olanak tanıyan bir parola alanı, sıfırlama düğmesi veya bir kontrolü kolayca oluşturabilirsiniz. 
