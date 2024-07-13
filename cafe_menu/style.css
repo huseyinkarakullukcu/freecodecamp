@@ -14,6 +14,7 @@ body{
    Sans-serif değerine sahip bir font-family özelliği ekleyerek vücudunuzdaki tüm metni değiştirin.
    */
    font-family: sans-serif;
+   padding:20px;
 }
 
 .menu{
@@ -42,6 +43,12 @@ padding-left:20px;
 
    
 }
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size:18px;
+}
 .dessert,.flavor{
     text-align:left;
     width:75%;
@@ -64,4 +71,24 @@ h2{
 }
 .established {
     font-style:italic;
-  }
+}
+hr{
+    /*
+        Çizginin kalınlığının nasıl daha büyük göründüğüne dikkat edin? border-width adlı bir özelliğin varsayılan değeri, hr öğelerinin tüm kenarları için 1 pikseldir. Kenarlığı arka planla aynı renge değiştirdiğinizde satırın toplam yüksekliği 5 piksel olur (3 piksel artı 1 piksellik üst ve alt kenar genişliği).
+        */
+    height:3px;
+    background-color:brown;
+    border-color:brown;
+}
+
+.bottom-line{
+    margin-top:25px;
+}
+
+/* FOOTER */
+footer{
+    font-size:14px;
+}
+a{
+    color: black;
+}
