@@ -62,13 +62,33 @@ Step - 12
 
          -->
 
-
+<!--
+    Tüm sayfalar <!DOCTYPE html> ile başlamalıdır. Bu özel dize, bildirim olarak bilinir ve tarayıcının sektör çapındaki spesifikasyonları karşılamaya çalışmasını sağlar.
+    
+    <!DOCTYPE html> tarayıcılara belgenin HTML'nin en son sürümü olan bir HTML5 belgesi olduğunu söyler.
+-->
     <!DOCTYPE html>
+    <!--
+    Sayfanın tüm içeriğinin bir html öğesinin içine yerleştirildiğine dikkat edin. Html öğesi, bir HTML sayfasının kök öğesidir ve sayfadaki tüm içeriği sarar.     
+    Ayrıca html öğesine lang özelliğini ekleyerek sayfanızın dilini de belirleyebilirsiniz.    
+
+-->
     <html lang="en">
+        <!-- 
+            Head öğesi, belgenin başlığı, stil sayfalarına bağlantılar ve komut dosyaları gibi belgeyle ilgili meta verileri içermek için kullanılır. Meta veriler, sayfa hakkında doğrudan sayfada görüntülenmeyen bilgilerdir.
+        -->
     <head>
+        <!--
+            Başlığa meta öğeler ekleyerek tarayıcı davranışını ayarlayabilirsiniz.
+
+            Head öğesinin içine, charset adlı özniteliğe sahip bir meta öğeyi yerleştirin. Değeri, tarayıcıya sayfa için karakterleri nasıl kodlayacağını söyleyen utf-8 olarak ayarlayın.
+        -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!--
+            Başlık öğesi, tarayıcıların sayfanın başlık çubuğunda veya sekmesinde ne göstereceğini belirler.
+        -->
+        <title>CatPhotoApp</title>
     </head>
     <body>
         <main>
@@ -179,6 +199,8 @@ Step - 12
       </section>
             
         </main>
-        <footer></footer>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
     </body>
     </html>
