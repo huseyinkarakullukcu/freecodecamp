@@ -3,17 +3,18 @@
 
 
 -->
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8" >
-            <!--
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--
                 For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
             -->
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Cafe Menu</title>
-            <style>
-                /*
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <style>
+        /*
                     Önceki adımda h1 öğesine stil vermek için bir tür seçici kullandınız.
 
                     Artık tamamen aynı stile sahip üç tip seçiciniz var. Bir seçici listesi oluşturarak aynı stil grubunu birçok öğeye ekleyebilirsiniz. Her seçici şu şekilde virgüllerle ayrılır:
@@ -24,25 +25,26 @@
                     text-align:center;
                 }
                     */
-            </style>
-            <!--
+    </style>
+    <!--
                 Şimdi stilleri.css dosyasını bağlamanız gerekiyor, böylece stiller tekrar uygulanacaktır. Head öğesinin içine bir link öğesi ekleyin. Buna "stylesheet" değerinde bir rel niteliği ve "styles.css" değerinde bir href niteliği verin.
             -->
-                <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <!--
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
                 Div öğesi, şu ana kadar kullandığınız diğer içerik öğelerinden farklı olarak esas olarak tasarım düzeni amacıyla kullanılır.
 
                 Kimlik özelliğiyle belirli bir öğeyi hedeflemek için kimlik seçiciyi kullanabilirsiniz. Bir kimlik seçici, hash sembolünün # doğrudan öğenin kimlik değerinin önüne yerleştirilmesiyle tanımlanır.
             -->
-            <div class="menu">
-                <main>
-                <h1>CAMPER CAFE</h1>
-                <p>Est. 2020</p>
-                <section>
-                    <h2>Coffee</h2>
-                    <!--
+    <div class="menu">
+        <main>
+            <h1>CAMPER CAFE</h1>
+            <p class="established">Est. 2020</p>
+            <section>
+                <h2>Coffee</h2>
+                <!--
                         Bazı menü öğelerini eklemeye başlamanın zamanı geldi. Kahve başlığı altına boş bir article öğesi ekleyin. Şu anda sunduğunuz her kahvenin lezzetini ve fiyatını içerecektir.
 
                         article öğeleri genellikle ilgili bilgileri içeren birden çok öğe içerir. Bu durumda içerisinde bir kahve aroması ve o aromaya ait bir fiyat yer alacaktır.
@@ -58,43 +60,57 @@
                         Bu daha yakın, ancak fiyat sağda kalmadı. Bunun nedeni satır içi blok öğelerinin yalnızca içeriklerinin genişliğini kaplamasıdır. Bunları yaymak için lezzet ve fiyat sınıfı seçicilere her biri %50 değere sahip bir genişlik özelliği ekleyin.
 
                     -->
-                        <article class="item">
-                            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-                        </article>
-                        <article>
-                            <p class="flavor">Caramel Macchiato</p>
-                            <p class="price">3.75</p>
-                          </article>
-                          <article class="item">
-                            <p class="flavor">Pumpkin Spice</p>
-                            <p class="price">3.50</p>
-                          </article>
-                          <article class="item">
-                            <p class="flavor">Hazelnut</p>
-                            <p class="price">4.00</p>
-                          </article>
-                          <article class="item">
-                            <p class="flavor">Mocha</p>
-                            <p class="price">4.50</p>
-                          </article>
-                  </section>
-                  <section>
-                    <h2>Desserts</h2>
-                    <article class="item">
-                        <p class="dessert">Donut</p><p class="price">1.50</p>
-                      </article>
-                      <article class="item">
-                        <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-                      </article>
-                      <article class="item">
-                        <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-                      </article>
-                      <article class="item">
-                        <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-                      </article>
-                  </section>
-            </main>
-            </div>
-            
-        </body>
-    </html>
+                <article class="item">
+                    <p class="flavor">French Vanilla</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article>
+                    <p class="flavor">Caramel Macchiato</p>
+                    <p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p>
+                    <p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p>
+                    <p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p>
+                    <p class="price">4.50</p>
+                </article>
+            </section>
+            <section>
+                <h2>Desserts</h2>
+                <article class="item">
+                    <p class="dessert">Donut</p>
+                    <p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p>
+                    <p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p>
+                    <p class="price">2.50</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <a href="https://www.freecodecamp.org">Visit our website</a>
+            </p>
+            <p>
+                123 Free Code Camp Drive
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
