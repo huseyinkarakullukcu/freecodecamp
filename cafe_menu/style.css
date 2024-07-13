@@ -10,6 +10,10 @@ body{
     Daha sonra #menüyü yatay olarak ortalamak istiyorsunuz. Bunu, sol kenar boşluğu ve sağ kenar boşluğu özelliklerini otomatik olarak ayarlayarak yapabilirsiniz. Kenar boşluğunu bir öğenin etrafındaki görünmez alan olarak düşünün. Bu iki kenar boşluğu özelliğini kullanarak #menu öğesini gövde öğesinin içinde ortalayın.
    */
    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+   /*
+   Sans-serif değerine sahip bir font-family özelliği ekleyerek vücudunuzdaki tüm metni değiştirin.
+   */
+   font-family: sans-serif;
 }
 
 .menu{
@@ -24,8 +28,19 @@ body{
     background-color:burlywood;
     margin-left: auto;
    margin-right: auto;
-   padding-left:20px;
+   /*
+padding-left:20px;
    padding-right:20px;
+   padding-top:20px;
+  padding-bottom:20px;
+   */
+   padding: 20px;
+   /*
+    Menü sınıfının çok genişlemesini önlemek için menü sınıfına 500 piksel değerinde bir max-width özelliği ekleyin.
+   */
+   max-width: 500px;
+
+   
 }
 .dessert,.flavor{
     text-align:left;
@@ -34,4 +49,10 @@ body{
 .price{
     text-align:right;
     width:25%;
+}
+h1,h2{
+    /*
+    Virgülle ayırarak başka bir yazı tipi adı ekleyerek yazı tipi ailesi için bir yedek değer ekleyebilirsiniz. Geri dönüşler, baş harfinin bulunmadığı/kullanılamadığı durumlarda kullanılır.
+    */
+    font-family: Impact, serif;
 }
