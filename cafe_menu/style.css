@@ -5,10 +5,29 @@ h1, h2, p{
 Metin yeniden ortalanır, böylece CSS dosyasına olan bağlantı çalışır. Dosyaya, gövde öğesinin arka plan rengi özelliğini kahverengiye değiştiren başka bir stil ekleyin.
 */
 body{
-   /* background-color:brown; */
+   /* 
+   background-color:brown; 
+    Daha sonra #menüyü yatay olarak ortalamak istiyorsunuz. Bunu, sol kenar boşluğu ve sağ kenar boşluğu özelliklerini otomatik olarak ayarlayarak yapabilirsiniz. Kenar boşluğunu bir öğenin etrafındaki görünmez alan olarak düşünün. Bu iki kenar boşluğu özelliğini kullanarak #menu öğesini gövde öğesinin içinde ortalayın.
+   */
+   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
-#menu{
-    width: 300px;
+.menu{
+    /*
+    Genişlik özelliğinin değerini, üst öğesinin (gövde) genişliğinin %80'i olacak şekilde %80 olacak şekilde değiştirin. 
+
+    #menu'yu .menu adlı bir sınıfla değiştirerek mevcut #menu seçiciyi bir sınıf seçiciye dönüştürün.
+    */
+    width: 80%;
     background-color:burlywood;
+    margin-left: auto;
+   margin-right: auto;
+}
+.flavor{
+    text-align:left;
+    width:75%;
+}
+.price{
+    text-align:right;
+    width:25%;
 }

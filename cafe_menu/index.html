@@ -36,12 +36,47 @@
 
                 Kimlik özelliğiyle belirli bir öğeyi hedeflemek için kimlik seçiciyi kullanabilirsiniz. Bir kimlik seçici, hash sembolünün # doğrudan öğenin kimlik değerinin önüne yerleştirilmesiyle tanımlanır.
             -->
-            <div id="menu">
+            <div class="menu">
                 <main>
                 <h1>CAMPER CAFE</h1>
                 <p>Est. 2020</p>
                 <section>
                     <h2>Coffee</h2>
+                    <!--
+                        Bazı menü öğelerini eklemeye başlamanın zamanı geldi. Kahve başlığı altına boş bir article öğesi ekleyin. Şu anda sunduğunuz her kahvenin lezzetini ve fiyatını içerecektir.
+
+                        article öğeleri genellikle ilgili bilgileri içeren birden çok öğe içerir. Bu durumda içerisinde bir kahve aroması ve o aromaya ait bir fiyat yer alacaktır.
+
+                         p elemanları blok düzeyindeki elemanlardır, dolayısıyla ana elemanlarının tüm genişliğini kaplarlar.
+
+                         Kahve başlığı altındaki ilk makale öğesine değer öğesi içeren bir sınıf niteliği ekleyerek başlayın.
+
+                        P öğeleri, item öğesinin sınıf niteliğine sahip bir article öğesinde nested. Öğelerin herhangi bir yerinde nested tüm p öğelerini, bunun gibi item adlı bir sınıfla stillendirebilirsiniz:
+
+                        Yukarıdaki seçiciyi kullanarak, p öğelerinin daha çok satır içi öğeler gibi davranması için inline-block değerine sahip bir görüntüleme özelliği ekleyin.
+
+                        Bu daha yakın, ancak fiyat sağda kalmadı. Bunun nedeni satır içi blok öğelerinin yalnızca içeriklerinin genişliğini kaplamasıdır. Bunları yaymak için lezzet ve fiyat sınıfı seçicilere her biri %50 değere sahip bir genişlik özelliği ekleyin.
+
+                    -->
+                        <article class="item">
+                            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                        </article>
+                        <article>
+                            <p class="flavor">Caramel Macchiato</p>
+                            <p class="price">3.75</p>
+                          </article>
+                          <article class="item">
+                            <p class="flavor">Pumpkin Spice</p>
+                            <p class="price">3.50</p>
+                          </article>
+                          <article class="item">
+                            <p class="flavor">Hazelnut</p>
+                            <p class="price">4.00</p>
+                          </article>
+                          <article class="item">
+                            <p class="flavor">Mocha</p>
+                            <p class="price">4.50</p>
+                          </article>
                   </section>
             </main>
             </div>
