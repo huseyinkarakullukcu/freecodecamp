@@ -1,0 +1,14 @@
+h1, h2, p{
+    text-align: center;
+}
+/*
+Metin yeniden ortalanır, böylece CSS dosyasına olan bağlantı çalışır. Dosyaya, gövde öğesinin arka plan rengi özelliğini kahverengiye değiştiren başka bir stil ekleyin.
+*/
+body{
+   /* background-color:brown; */
+}
+
+#menu{
+    width: 300px;
+    background-color:burlywood;
+}

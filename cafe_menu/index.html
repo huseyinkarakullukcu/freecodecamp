@@ -7,20 +7,44 @@
     <html>
         <head>
             <meta charset="utf-8" >
+            <!--
+                For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+            -->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Cafe Menu</title>
             <style>
-                h1{
+                /*
+                    Önceki adımda h1 öğesine stil vermek için bir tür seçici kullandınız.
+
+                    Artık tamamen aynı stile sahip üç tip seçiciniz var. Bir seçici listesi oluşturarak aynı stil grubunu birçok öğeye ekleyebilirsiniz. Her seçici şu şekilde virgüllerle ayrılır:
+
+                    Stil etiketlerinin içine CSS yazarak üç öğeye stil verdiniz. Bu işe yarar, ancak çok daha fazla stil olacağından, tüm stilleri ayrı bir dosyaya koymak ve ona bağlantı vermek en iyisidir.
+                
+                h1, h2, p{
                     text-align:center;
                 }
+                    */
             </style>
+            <!--
+                Şimdi stilleri.css dosyasını bağlamanız gerekiyor, böylece stiller tekrar uygulanacaktır. Head öğesinin içine bir link öğesi ekleyin. Buna "stylesheet" değerinde bir rel niteliği ve "styles.css" değerinde bir href niteliği verin.
+            -->
+                <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <main>
+            <!--
+                Div öğesi, şu ana kadar kullandığınız diğer içerik öğelerinden farklı olarak esas olarak tasarım düzeni amacıyla kullanılır.
+
+                Kimlik özelliğiyle belirli bir öğeyi hedeflemek için kimlik seçiciyi kullanabilirsiniz. Bir kimlik seçici, hash sembolünün # doğrudan öğenin kimlik değerinin önüne yerleştirilmesiyle tanımlanır.
+            -->
+            <div id="menu">
+                <main>
                 <h1>CAMPER CAFE</h1>
                 <p>Est. 2020</p>
                 <section>
                     <h2>Coffee</h2>
                   </section>
             </main>
+            </div>
+            
         </body>
     </html>
