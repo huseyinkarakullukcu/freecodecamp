@@ -11,17 +11,36 @@ h1{
 İki ana renk modeli vardır: Elektronik cihazlarda kullanılan eklemeli RGB (kırmızı, yeşil, mavi) modeli ve baskıda kullanılan çıkarmalı CMYK (camgöbeği, macenta, sarı, siyah) modeli.
 
 Bu projede RGB modeliyle çalışacaksınız. Bu, renklerin siyah olarak başladığı ve kırmızı, yeşil ve mavinin farklı düzeyleri eklendikçe değiştiği anlamına gelir. Bunu görmenin kolay bir yolu CSS rgb işlevidir.
+
+İşlev, bir girdi alabilen ve belirli bir eylemi gerçekleştirebilen bir kod parçasıdır. CSS rgb işlevi kırmızı, yeşil ve mavi için değerleri veya bağımsız değişkenleri kabul eder ve bir renk üretir:
+
+Renk çarkında birbirine zıt olan iki renge tamamlayıcı renkler denir. İki tamamlayıcı renk birleştirilirse gri elde edilir. Ancak yan yana yerleştirildiğinde bu renkler güçlü bir görsel kontrast oluşturur ve daha parlak görünür.
+
+Kırmızı ve turquaz renklerin yan yana çok parlak olduğuna dikkat edin. Bu kontrast, bir web sitesinde aşırı kullanıldığında dikkat dağıtıcı olabilir ve tamamlayıcı renkli bir arka plan üzerine yerleştirildiğinde metnin okunmasını zorlaştırabilir.
+
+Siyah ve kırmızı: Gözlerinizin doğal olarak merkezdeki kırmızı renge nasıl çekildiğini fark ettiniz mi? Bir site tasarlarken önemli başlıklara, düğmelere veya bağlantılara dikkat çekmek için bu efekti kullanabilirsiniz.
+
+
 */
-.one{
+.red{
+    /*
     background-color:red;
+    
+    background-color:rgb(255,0,0);
+    */
+    background:linear-gradient(90deg, rgb(255,0,0),rgb(0,255,0))
   }
 
-  .two{
-    background-color:green;
+.green{
+    background-color:rgb(0,255,0);
   }
-  .three{
-    background-color:blue;
+.blue{
+    background-color:rgb(0,0,255);
   }
 .container{
     background-color:rgb(0, 0, 0);
+    padding:10px 0;
+}
+h1{
+    background-color:rgb(0,255,255);
 }
