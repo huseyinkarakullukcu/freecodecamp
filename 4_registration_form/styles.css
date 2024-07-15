@@ -1,0 +1,11 @@
+/*
+- Vh birimi görünüm yüksekliği anlamına gelir ve görünüm yüksekliğinin %1'ine eşittir. Bu, onu görünüm yüksekliğine göre yapar.
+
+- Rem birimi root em anlamına gelir ve html öğesinin yazı tipi boyutuna bağlıdır.
+
+*/
+body{
+    width: 100%;
+    height: 100vh;
+    margin:0;
+}
