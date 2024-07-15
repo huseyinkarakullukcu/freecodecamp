@@ -3,9 +3,23 @@
 
 - Rem birimi root em anlamına gelir ve html öğesinin yazı tipi boyutuna bağlıdır.
 
+- Son alan kümesi öğesinin kenarlığı biraz yersiz görünüyor. Belirli bir türün son öğesini, türün sonuncusu CSS sözde sınıfını kullanarak şu şekilde seçebilirsiniz:
+
 */
 body{
     width: 100%;
     height: 100vh;
     margin:0;
+}
+
+fieldset:last-of-type{
+    border-bottom:none;
+  }
+input, textarea, select{
+    width:100%;
+    margin:10px 0 0 0;
+}
+.inline{
+    width: unset;
+    vertical-align: middle;/* radio işaretçilerini label a göre ortalar */
 }
