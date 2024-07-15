@@ -11,12 +11,21 @@
     <p>Please fill out this form with the required information</p>
     <form action="https://register-demo.freecodecamp.org" method="POST">
         <fieldset>
-            <label>Enter Your First Name:</label>
-            <label>Enter Your Last Name:</label>
-            <label>Enter Your Email:</label>
-            <label>Create a New Password:</label>
+            <label for="first-name">Enter Your First Name: <input id="first-name" /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" /></label>
+            <label for="email">Enter Your Email: <input id="email" /></label>
+            <!--
+                - type = "password" ile, şifrenin geçerli sayılması için eşleşmesi gereken normal bir ifadeyi tanımlamak üzere pattern özelliğini kullanabilirsiniz.
+                - input eşleşmesini gerektirmek için şifre giriş öğesine bir model niteliği ekleyin: [a-z0-5]{8,}
+
+                - Yukarıdaki, sekiz veya daha fazla küçük harfle veya 0'dan 5'e kadar olan rakamlarla eşleşen bir normal ifadedir. Ardından minlength özelliğini kaldırın ve deneyin.
+            -->
+            <label for="new-password">Create a New Password: <input id="new-password" /></label>
           </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label><input type="radio" name="account-type" /> Personal</label>
+        <label><input type="radio" name="account-type" /> Business</label>
+        </fieldset>
         <fieldset></fieldset>
     </form>
 </body>
